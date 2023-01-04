@@ -1,6 +1,6 @@
 def solution(N, stages):
-    answer = [] #단계별로 (실패율, 단계)로 저장
-    slist = [0] * 503
+    answer = [] #단계별로 (단계, 실패율)로 저장
+    slist = [0] * 502 #전체가 500단계인 경우 slist[501]에도 값이 할당될 수 있음
     for s in stages:
         slist[s] += 1
     people = len(stages) #남은 사람 수
