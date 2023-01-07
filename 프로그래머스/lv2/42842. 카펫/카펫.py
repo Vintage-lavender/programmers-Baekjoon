@@ -4,12 +4,10 @@
 #즉, 전체 크기가 (n*m)이면 노란 부분은 ((n-2)*(m-2))면 된다
 #가로길이 >= 세로 길이(긴 길이 먼저 출력되게 함)
 def solution(brown, yellow):
-    answer = []
     total = brown + yellow
     for h in range(3,int(total**0.5)+1): #세로 길이만 탐색
         if total%h == 0:
             w = total//h
             if (w-2)*(h-2) == yellow:
-                answer += [w,h]
-                break
-    return answer
+                return [w,h]
+           
