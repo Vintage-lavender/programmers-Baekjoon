@@ -1,4 +1,3 @@
-#큐가 비어있으면 [0,0]
 import heapq
 def solution(operations):
     queue = []
@@ -15,5 +14,5 @@ def solution(operations):
         #print(queue)
     
     if len(queue) >= 1:
-        return [max(queue),queue[0]]
+        return [max(queue),queue[0]] #minheap의 최댓값은 마지막 인덱스로 보장되지 않음
     return [0,0]
