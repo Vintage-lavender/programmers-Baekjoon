@@ -4,6 +4,4 @@ def solution(arr, divisor):
     for a in arr:
         if a%divisor==0:
             answer.append(a)
-    if not answer:
-        answer = [-1]
-    return answer
+    return answer or [-1]
