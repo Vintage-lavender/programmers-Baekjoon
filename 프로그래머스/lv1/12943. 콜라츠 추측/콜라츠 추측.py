@@ -1,6 +1,6 @@
 def solution(num):
     answer = -1
-    for i in range(500):
+    for i in range(501):
         if num==1:
             return i
         if num%2==0:
