@@ -1,9 +1,9 @@
 import re
 def solution(new_id):
     new_id = new_id.lower()
-    sym = re.compile('[a-z0-9-_.]') #보관할 것
-
-    new_id = ''.join(sym.findall(new_id)).split('.')
+    #sym = re.compile('[a-z 0-9 -_.]') #보관할 것
+    #new_id = ''.join(sym.findall(new_id)).split('.')
+    new_id = re.sub('[^a-z0-9-_.]','',new_id).split('.')
     answer = ''
     for i in new_id:
         if i:
