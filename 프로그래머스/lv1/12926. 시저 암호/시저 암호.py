@@ -1,6 +1,7 @@
 #'a'=97~122
 #'A'=65~90
 #print(chr(122),chr(90))
+#isupper(), islower() 메서드도 있다고 함
 def solution(s, n):
     answer = ''
     for i in s:
