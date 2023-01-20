@@ -1,5 +1,5 @@
 def solution(nums):
-    cand = []
+    answer = 0
     for i in range(len(nums)-2):
         for j in range((i+1),(len(nums)-1)):
             for k in range((j+1),len(nums)):
@@ -8,5 +8,5 @@ def solution(nums):
                 while comb%n:
                     n+=1
                 if comb==n:
-                    cand.append(comb)
-    return len(cand)
+                    answer += 1
+    return answer
