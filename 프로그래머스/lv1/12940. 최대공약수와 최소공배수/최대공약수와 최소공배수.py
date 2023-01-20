@@ -12,11 +12,12 @@ def solution(n, m):
                 break
             elif m%i==0:
                 largest = i
-    smallest = m
-    while smallest <= n*m:
-        if (smallest%n)==0:
-            break
-        else:
-            smallest += m
-                
-    return [largest,smallest]
+    
+    #smallest = m
+    #while smallest <= n*m:
+    #    if (smallest%n)==0:
+    #        break
+    #    else:
+    #        smallest += m
+          
+    return [largest,n*m/largest]
