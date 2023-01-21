@@ -3,8 +3,9 @@
 def solution(people, limit):
     from collections import deque
     answer = 0
-    people.sort(reverse=True)
-    queue = deque(map(int,people))
+    #people.sort(reverse=True)
+    #queue = deque(map(int,people))
+    queue = deque(sorted(people,reverse=True))
     while queue:
         if len(queue)>1 and queue[0]+queue[-1]<=limit:
             queue.pop()
