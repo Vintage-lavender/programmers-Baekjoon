@@ -8,7 +8,7 @@ def solution(n):
     #print(40)
     a,b = 1,1
     #print(a,b)
-    #while b<40: #n이 커지면 경우의 수가 n보다 커지는 것은 매우 당연하므로 이 코드는 틀렸음
+    #while b<n: #n이 커지면 경우의 수가 n보다 커지는 것은 매우 당연하므로 이 코드는 틀렸음
     for i in range(n-1):
         a,b = b,(a+b)
         #print(a,b)
